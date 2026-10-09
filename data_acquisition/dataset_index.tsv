@@ -1,0 +1,8 @@
+dataset_id	type	role	n_samples	platform	source_url	local_path	status	notes
+GSE103224	scRNA-seq	discovery_anchor	8	Smart-seq2-like (UMI)	GEO	<DATA_ROOT>/GSE103224/	on_disk	Project-owned; 8 per-sample filtered matrices, tab-delim ENSG+sym+counts, no header/barcode
+GSE131928	scRNA-seq	sc_reproducibility	28	Smart-seq2 + 10X	GEO	GSE131928_RAW.tar	downloaded	GEO deposit = pooled processed TPM (2 files) + cell-metadata xlsx; subject mapping in xlsx
+TCGA-GBM+LGG	bulk RNA-seq	train_candidate_A	~700 (after dedup)	STAR counts	GDC	<DATA_ROOT>/TCGA/GeneExpr/	downloading	925 STAR-counts files (~3.7 GB); GDC clinical 1133 cases
+CGGA-693	bulk RNA-seq	train_candidate_B / validation	693	RNA-seq (RSEM + counts)	cgga.org.cn	<DATA_ROOT>/CGGA/ *693*	downloaded	Gene-symbol matrix x693 + full clinical (IDH/1p19q/MGMT/grade/age/OS)
+CGGA-325	bulk RNA-seq	validation_1	325	RNA-seq (RSEM + counts)	cgga.org.cn	<DATA_ROOT>/CGGA/ *325*	downloaded	Gene-symbol matrix x325 + full clinical
+GSE108474 (REMBRANDT)	bulk microarray	validation_crossplatform	542	HG-U133 Plus 2.0	GEO	GSE108474_REMBRANDT_GeneExpression.txt.gz	downloaded	Probe-level log2 matrix + clinical (OS, WHO grade); real REMBRANDT
+GSE16011	bulk microarray	validation_crossplatform	276	GPL8542 (HG-U133 Plus 2.0)	GEO	GSE16011_series_matrix.txt.gz	downloaded	Series matrix (probes x samples) + platform GPL8542

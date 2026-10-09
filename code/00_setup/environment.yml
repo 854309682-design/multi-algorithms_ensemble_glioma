@@ -1,0 +1,24 @@
+## Python environment for the single-cell, spatial and figure-assembly scripts.
+## Conda (mamba or conda >= 4.6 accepts this file):
+##     conda env create -f code/00_setup/environment.yml
+## The packages are those imported by the scripts in this repository; version pins are
+## deliberately loose -- the manuscript was produced with scanpy 1.12.x / anndata 0.13.x
+## on Python 3.11-3.12.
+name: glioma-paper3
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - numpy
+  - pandas
+  - scipy
+  - scikit-learn
+  - matplotlib
+  - scanpy
+  - anndata
+  - harmonypy
+  - leidenalg          # clustering used in stage 1
+  - python-igraph
+  - pip
+  - pip:
+    - pymupdf          # `import fitz` -- composite figure assembly (code/99_figures)
